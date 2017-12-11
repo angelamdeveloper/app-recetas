@@ -1,0 +1,17 @@
+<h1>Recetas</h1>
+<hr>
+<div class="card-columns">
+  <div class="card" *ngFor="let receta of recetas">
+    <img class="card-img-top img-fluid" [src]="receta.img" [alt]="receta.nombre">
+    <div class="card-block">
+      <h4 class="card-title">{{ receta.nombre }}</h4>
+      <p class="card-text">{{receta.descripcion}}</p>
+      <p class="card-text"><small class="text-muted">{{receta.tiempo}}</small></p>
+
+      <!--<button (click)="verHeroe(i)"
+       type="button" class="btn btn-outline-primary btn-block">
+        Ver mas...
+      </button>-->
+    </div>
+  </div>
+</div>
